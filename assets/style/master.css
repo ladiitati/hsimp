@@ -1,6 +1,7 @@
 label {
     display: block;
     font: .9rem 'Fira Sans', sans-serif;
+    font-size: 40px;
 }
 
 input[type='submit'],
