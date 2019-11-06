@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- link css style sheet-->
   <link rel="stylesheet" href="assets/style/master.css">
+  <title>HSIMP Demo</title>
 </head>
 
 <body>
-<div>
-    <label for="pass">Password (8 characters minimum):</label>
-    <input type="password" id="pass" name="password"
-           minlength="8" required>
+<div id="header">
+    <label for="pass">Are you Hackable?</label>
 </div>
-
-<input type="submit" value="Sign in">
-
+<!-- <div>
+        <button onClick="update()">Click Me</button>
+</div> -->
+<div>
+        <input type="password" id="passwordBox" name="password"  autocomplete="none" keyup=checkStrength class="inputBox">
+</div>
+<div id="Progress_Status">
+        <progress id="progressBar" value="0" max="100" class="progressBar"></progress> 
+</div> 
+ 
+<script src="assets/scripts/controller.js"></script>
 </body>
 </html>

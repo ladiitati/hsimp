@@ -1,10 +1,61 @@
-label {
-    display: block;
-    font: .9rem 'Fira Sans', sans-serif;
-    font-size: 25px;
+body {
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    min-height: 100%;
 }
 
-input[type='submit'],
-label {
-    margin-top: 1rem;
+html {
+    height: 100%;
+  }
+
+label { 
+    display: block;
+    font-family: Marker felt, fantasy;
+    /*font: .9rem 'Fira Sans', sans-serif;*/
+    font-size: 50px;
 }
+#header {
+    font-size: 3em;
+    line-height: 1em;
+    padding-top: 1em;
+    /* title color*/
+    color: #030409;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transition: font-size 1s linear;
+}
+.inputBox {
+    font-size: 3em;
+    line-height: 1.5em;
+    border: 1px solid rgb(1, 5, 2);
+    /* inside input box*/
+    background: #9198e5;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+    display: block;
+    height: 1.5em;
+    margin-top: 1em;
+    padding: 0;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+  }
+progress {
+    /*empty progress bar color*/
+    background-color: #ebfce8;
+    width: 100%; 
+}
+#Progress_Status { 
+    padding: 50px;
+    } 
+    
+/*#myprogressBar { 
+    width: 1%; 
+    height: 35px; 
+    text-align: center; 
+    line-height: 32px; 
+    color: rgb(14, 130, 58); 
+} */
+    
