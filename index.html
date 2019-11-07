@@ -9,16 +9,48 @@
 <body>
 <div id="header">
     <label for="pass">Are you Hackable?</label>
+    <h1>Password Strength</h1>
 </div>
-<!-- <div>
-        <button onClick="update()">Click Me</button>
-</div> -->
-<div>
+
+<div id="inputContainer">
         <input type="password" id="passwordBox" name="password"  autocomplete="none" keyup=checkStrength class="inputBox">
 </div>
-<div id="Progress_Status">
+
+<div id="progressContainer">
         <progress id="progressBar" value="0" max="100" class="progressBar"></progress> 
 </div> 
+
+<div id="buttonLayout">
+        <button onclick="content()">Find Out</button>        
+</div>
+<div id="strong" style="display: none;">
+        <h1>You Have Decent Security Practices</h1>
+        <h4> Improve:</h4>
+        <ul>
+                <li>Change your password one a month
+                <li>Use phrases as your password</li>
+                        <p>ie song lyrics, quotes, etc</p>
+                <li> adding 2FA (Two-Factor Authentication)</li>
+                <li>Make sure to always log out</li>
+                <li>Avoid web browsers saving you password and username</li>
+                <li>Use complex usernames like your password</li>
+        </ul>
+</div> 
+<div id="weak" style="display: none;"> 
+<h1>Your Password Strength Determines Your Safety</h1>
+        <h4> Password Complexity:</h4>
+        <ul>
+                <li>Must contain atleast 12 Characters</li>
+                <li>MUST contain at least one uppercase letter</li>
+                <li>MUST contain at least one lowercase letter</li>
+                <li>MUST contain at least one number</li>
+                <li>MUST contain at least one special character (!”#$%&'()*+,-./:;=>?@[\]^_`{|}~ )</li>
+                <li>MAY NOT contain more than two identical characters in a row</li>
+                <li>MAY NOT contain first name, last name, email address mailbox or domain, company name or commonly used passwords</li>
+                <li>MAY NOT match commonly used password character patterns</li>
+        </ul>
+</div>
+
  
 <script src="assets/scripts/controller.js"></script>
 </body>
